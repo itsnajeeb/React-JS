@@ -1,0 +1,20 @@
+.container {
+  background-color: blue ;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+
+}
+
+.btn{
+  background-color: rgb(25, 25, 26);
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
