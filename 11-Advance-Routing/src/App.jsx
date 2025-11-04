@@ -10,11 +10,15 @@ import Footer from './components/Footer'
 import PageNotFound from './Pages/PageNotFound'
 import Men from './Pages/men'
 import Women from './Pages/women'
+import Course from './Pages/Course'
+import CourseDetails from './Pages/CourseDetails'
+import HeroNav from './components/HeroNav'
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <HeroNav/>
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
@@ -23,6 +27,9 @@ const App = () => {
           <Route path='men' element={<Men />} />
           <Route path='women' element={<Women />} />
         </Route>
+
+        <Route path='/course' element={<Course />} />
+        <Route path='/course/:id' element={<CourseDetails />} />
         <Route path='*' element={<PageNotFound />}></Route>
 
       </Routes>
